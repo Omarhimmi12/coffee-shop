@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coffee House</title>
+  <link rel="icon" type="image/x-icon" href="img/logo.jpg">
+  <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  
+</head>
+<body>
+
+  <header class="header">
+    <a href="index.html" class="logo">
+      <img src="img/logo.jpg" alt="logo">
+    </a>
+
+    <nav class="navbar">
+      <a href="#home">Home</a>
+      <a href="#about">About Us</a>
+      <a href="#menu">Menu</a>
+      <a href="#products">Products</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="icons">
+      <div class="fas fa-search" id="search-btn"></div>
+      <div class="fas fa-shopping-cart" id="cart-btn"></div>
+      <div class="fas fa-bars" id="menu-btn"></div>
+    </div>
+
+    <div class="search-form">
+      <input type="search" id="search-box" placeholder="Search here...">
+      <label for="search-box" class="fas fa-search"></label>
+    </div>
+  </header>
+
+  <div class="cart-items-container" id="cart-container">
+    <a href="#" class="btn">Checkout now</a>
+  </div>
+
+  <!-- home section -->
+  <section class="home" id="home">
+    <div class="content">
+      <h3>life begins after coffee</h3>
+      <p>Come in and let the coffee speak for itself.</p>
+      <a href="#products" class="btn">Get yours now</a>        
+      <div class="share mt-5">
+        <a href="https://www.facebook.com" target="_blank" class="fab fa-facebook-f"></a>
+        <a href="https://www.whatsapp.com" target="_blank" class="fab fa-whatsapp"></a>
+        <a href="https://www.x.com" target="_blank" class="fab fa-twitter"></a>
+        <a href="https://www.instagram.com" target="_blank" class="fab fa-instagram"></a>
+        <a href="https://www.linkedin.com" target="_blank" class="fab fa-linkedin"></a>
+        <a href="https://www.pinterest.com" target="_blank" class="fab fa-pinterest"></a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- about section -->
+   <section class="about reveal" id="about">
+    <h1 class="heading text-center my-5">About <span>Us</span></h1>
+    <div class="row">
+      <div class="col-md-6 col-sm-12 image">
+        <video src="videos/girl-staff.mp4" autoplay height="100%" width="100%" muted loop playsinline class="rounded rounded-3"></video>
+
+      </div>
+      
+      <div class="col-md-6 col-sm-12 content">
+        <h3>What makes our coffee special</h3>
+        <p>At Coffee House, every cup tells a story. We source only the top 1% of Arabica beans from sustainable farms around the world, ensuring every sip is rich, smooth, and ethically brewed.</p>
+        <p>Our beans are roasted in small batches to preserve freshness and bring out their unique flavor profiles. Whether it’s a bold espresso or a creamy latte, you’ll taste the care in every drop.</p>
+        <p>We also believe coffee is more than a drink—it’s a moment. That’s why our cozy space, handcrafted drinks, and friendly baristas create an experience that keeps customers coming back.</p>
+        <p>From bean to cup, we’re committed to quality, sustainability, and community.</p>
+
+      </div>
+    </div>
+   </section>
+
+   <!-- Menu -->
+  <section class="menu reveal" id="menu">
+  <h1 class="heading text-center"> our <span>menu</span> </h1>
+
+  <div class="box-container">
+
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <img src="img/espressoo.jpg" alt="Espresso">
+          <h3>Espresso</h3>
+          <p>$4.99</p>
+        </div>
+        <div class="flip-card-back">
+          <h3>Espresso</h3>
+          <p>A strong, concentrated coffee shot made by forcing hot water through finely-ground coffee beans. The base of many coffee drinks.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <img src="img/latte.jpg" alt="Latte">
+          <h3>Latte</h3>
+          <p>$5.49</p>
+        </div>
+        <div class="flip-card-back">
+          <h3>Latte</h3>
+          <p>Espresso mixed with steamed milk and topped with a thin layer of milk foam. Smooth, creamy, and less intense.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <img src="img/cappucino.jpg" alt="Cappuccino">
+          <h3>Cappuccino</h3>
+          <p>$5.29</p>
+        </div>
+        <div class="flip-card-back">
+          <h3>Cappuccino</h3>
+          <p>Equal parts espresso, steamed milk, and milk foam. Stronger than a latte with a frothy top.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <img src="img/mocha.jpg" alt="Mocha">
+          <h3>Mocha</h3>
+          <p>$5.99</p>
+        </div>
+        <div class="flip-card-back">
+          <h3>Mocha</h3>
+          <p>A sweet blend of espresso, steamed milk, and chocolate. Often topped with whipped cream, perfect for chocolate lovers.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <img src="img/americano.jpg" alt="Americano">
+          <h3>Americano</h3>
+          <p>$4.49</p>
+        </div>
+        <div class="flip-card-back">
+          <h3>Americano</h3>
+          <p>Espresso diluted with hot water. Milder than espresso but still rich in flavor.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <img src="img/restretto.jpg" alt="Restretto">
+          <h3>Restretto</h3>
+          <p>$5.39</p>
+        </div>
+        <div class="flip-card-back">
+          <h3>Restretto</h3>
+          <p>A short shot of espresso using less water. More concentrated, richer, and bolder than a regular espresso.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <img src="img/irish coffee.jpg" alt="Irish Coffee">
+          <h3>Irish Coffee</h3>
+          <p>$5.19</p>
+        </div>
+        <div class="flip-card-back">
+          <h3>Irish Coffee</h3>
+          <p>Hot coffee combined with Irish whiskey and sugar, topped with lightly whipped cream. A warming and spirited treat.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <img src="img/cold brew.jpg" alt="Cold brew">
+          <h3>Cold brew</h3>
+          <p>$4.99</p>
+        </div>
+        <div class="flip-card-back">
+          <h3>Cold brew</h3>
+          <p>Hot coffee combined with Irish whiskey and sugar, topped with lightly whipped cream. A warming and spirited treat.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <img src="img/affogato.jpg" alt="Affogato">
+          <h3>Affogato</h3>
+          <p>$6.49</p>
+        </div>
+        <div class="flip-card-back">
+          <h3>Affogato</h3>
+          <p>An indulgent dessert: a scoop of vanilla ice cream “drowned” in a shot of hot espresso.</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+    <!-- Products -->
+    <section class="products reveal" id="products">
+      <h1 class="heading text-center my-5">Our <span>Products</span></h1>
+      <div class="box-container" id="product-container">
+        <div class="box">
+          <div class="image"><img src="img/brazil.jpg" alt=""></div>
+          <h3>11oz Brazil Cerrado Dark Single</h3>
+          <div class="price">$10.99 <span>$14.99</span></div>
+          <a class="btn">Add to cart</a>
+        </div>
+        <div class="box">
+          <div class="image"><img src="img/breakfast.jpg" alt=""></div>
+          <h3>11oz Breakfast Blend Coffee</h3>
+          <div class="price">$15.99 <span>$20.99</span></div>
+          <a class="btn">Add to cart</a>
+        </div>
+        <div class="box">
+          <div class="image"><img src="img/colombia.jpg" alt=""></div>
+          <h3>11oz Colombia Ground Roast Craft</h3>
+          <div class="price">$15.99 <span>$20.99</span></div>
+          <a class="btn">Add to cart</a>
+        </div>
+        <div class="box">
+          <div class="image"><img src="img/costa.jpg" alt=""></div>
+          <h3>11oz Costa Rica Ground Roast Craft</h3>
+          <div class="price">$15.99 <span>$20.99</span></div>
+          <a class="btn">Add to cart</a>
+        </div>
+        <div class="box">
+          <div class="image"><img src="img/french.jpg" alt=""></div>
+          <h3>11oz French Roast Coffee</h3>
+          <div class="price">$15.99 <span>$20.99</span></div>
+          <a class="btn">Add to cart</a>
+        </div>
+        <div class="box">
+          <div class="image"><img src="img/mocha java.jpg" alt=""></div>
+          <h3>1lb Mocha Java Coffee</h3>
+          <div class="price">$15.99 <span>$20.99</span></div>
+          <a class="btn">Add to cart</a>
+        </div>
+        <div class="box">
+          <div class="image"><img src="img/kenya.jpg" alt=""></div>
+          <h3>1Lb Kenya Single Origin Coffee</h3>
+          <div class="price">$15.99 <span>$20.99</span></div>
+          <a class="btn">Add to cart</a>
+        </div>
+        <div class="box">
+          <div class="image"><img src="img/ethiopia.jpg" alt=""></div>
+          <h3>1lb Ethiopia Single Origin</h3>
+          <div class="price">$17.99 <span>$20.99</span></div>
+          <a class="btn">Add to cart</a>
+        </div>
+        <div class="box">
+          <div class="image"><img src="img/bali.jpg" alt=""></div>
+          <h3>1lb Bali Blue Moon Single Origin</h3>
+          <div class="price">$18.99 <span>$22.99</span></div>
+          <a class="btn">Add to cart</a>
+        </div>
+      </div>
+      <div class="mt-4">
+        <button class="btn" id="show-more-products">Show More</button>
+      </div>
+    </section>
+
+
+    <!-- Reviews -->
+    <section class="reviews reveal" id="reviews">
+      <h1 class="heading text-center">customer's <span>reviews</span></h1>
+      <div class="reviews-container">
+          <div class="review-card">
+          <div class="review-content">
+            <img src="img/man.jpg" class="user" alt="Customer">
+            <h3>John Doe</h3>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+            <p>"This is my go-to place for coffee and remote work. Fast Wi-Fi, quiet corners, and the oat milk cappuccino is out of this world!"</p>
+          </div>
+      <div class="border-anim"></div>
+    </div>
+        <div class="review-card">
+      <div class="review-content">
+        <img src="img/woman1.jpg" class="user" alt="Customer">
+        <h3>Jane Smith</h3>
+        <div class="stars">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+        </div>
+        <p>"I’ve tried coffee from dozens of cafes, but Coffee House has the smoothest espresso I’ve ever had. The vibe is warm and the service is excellent!"</p>
+      </div>
+      <div class="border-anim"></div>
+    </div>
+    <div class="review-card">
+      <div class="review-content">
+        <img src="img/woman2.jpg" class="user" alt="Customer">
+        <h3>Olivia Smith</h3>
+        <div class="stars">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="far fa-star"></i>
+        </div>
+        <p>I love how they prioritize eco-friendly practices. Plus, their seasonal drinks are always creative and delicious. Highly recommend!</p>
+      </div>
+      <div class="border-anim"></div>
+    </div>
+
+      </div>
+    </section>
+       
+
+     <!-- Contact -->
+      <div class="contact reveal" id="contact">
+        <h1 class="heading text-center my-5">Contact <span>Us</span></h1>
+        <div class="row">
+          <div class="col-md-6 col-sm-12">
+
+          <form action="">
+            <h3>Get in touch</h3>
+            <div class="inputBox">
+              <span class="fas fa-user"></span>
+              <input type="text" placeholder="Enter your name">
+            </div>
+            <div class="inputBox">
+              <span class="fas fa-envelope"></span>
+              <input type="email" placeholder="Enter your email">
+            </div>
+            <div class="inputBox">
+              <span class="fas fa-message"></span>
+              <textarea placeholder="Enter your message here..." rows="5" cols="10"></textarea>
+            </div>
+            <input type="submit" value="Contact now" class="btn">
+          </form>
+          </div>
+          <div class="col-md-5 col-sm-12 image">
+            <img src="img/1.jpg" alt="" id="hoverImg">
+
+          </div>
+        </div>
+      </div>
+      <!-- FAQs -->
+        <section class="faq reveal" id="faq">
+          <h1 class="heading text-center my-5">Frequently Asked <span>Questions</span></h1>
+          <div class="faq-container">
+          <div class="faq-item">
+            <button class="faq-question">What are your opening hours?</button>
+            <div class="faq-answer">We’re open from 7:00 AM to 9:00 PM every day, including weekends.</div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question">Do you offer plant-based milk options?</button>
+            <div class="faq-answer">Yes! We offer almond, oat, soy, and coconut milk for your coffee.</div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question">Do you have free Wi-Fi?</button>
+            <div class="faq-answer">Absolutely. Just ask our staff for the current Wi-Fi password.</div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question">Are pets allowed?</button>
+            <div class="faq-answer">Yes, we’re a pet-friendly café! We even have treats for your furry friends.</div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question">Can I reserve a table in advance?</button>
+            <div class="faq-answer">Yes, you can reserve a table by calling us or using the reservation form on our website.</div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question">Do you have vegan or gluten-free pastries?</button>
+            <div class="faq-answer">We do! Our pastry selection includes vegan and gluten-free options daily.</div>
+        </div>
+        </div>
+        </section>
+
+
+      <!-- Footer -->
+       <section class="footer">
+        <h3 class="heading">Find <span>Us Here</span></h3>
+        <h2 class="text-center" style="color: #d3ad7f;">742 Evergreen Terrace, Springfield, IL 62704, USA</h4>
+        <div class="share">
+          <a href="https://www.facebook.com" target="_blank" class="fab fa-facebook-f"></a>
+          <a href="https://www.whatsapp.com" target="_blank" class="fab fa-whatsapp"></a>
+          <a href="https://www.x.com" target="_blank" class="fab fa-twitter"></a>
+          <a href="https://www.instagram.com" target="_blank" class="fab fa-instagram"></a>
+          <a href="https://www.linkedin.com" target="_blank" class="fab fa-linkedin"></a>
+          <a href="https://www.pinterest.com" target="_blank" class="fab fa-pinterest"></a>
+        </div>
+        <div class="links">
+          <a href="#home">Home</a>
+          <a href="#about">About Us</a>
+          <a href="#menu">Menu</a>
+          <a href="#products">Products</a>
+          <a href="#reviews">Reviews</a>
+          <a href="#contact">Contact</a>
+          <a href="#blogs">Blogs</a>       
+        </div>
+       </section>
+
+       <!-- Checkout Modal -->
+      <div class="modal fade" id="checkoutModal" tabindex="-1" aria-labelledby="checkoutModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content text-dark">
+            <div class="modal-header">
+              <h2 class="modal-title" id="checkoutModalLabel">Your Order Summary</h2>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body" id="checkout-modal-body">
+              <!-- Cart items will be injected here -->
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-success" id="final-checkout">Confirm Order</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+  <script src="bootstrap/bootstrap.bundle.min.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
