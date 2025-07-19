@@ -25,4 +25,10 @@ Welcome to the **Coffee Shop** project — a stylish, responsive, and animated w
 - Bootstrap 5
 - Git & GitHub
 
+## 🖼️ Screenshots
+
+
+![Homepage](img/screenshot1.png)
+
+![MobilePhoneView](img/screenshot2.png)
 
