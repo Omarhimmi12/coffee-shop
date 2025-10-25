@@ -168,7 +168,6 @@ document.getElementById("final-checkout").onclick = () => {
 };
 }
 
-
 // Remove item from cart
 function removeItem(name) {
   let items = JSON.parse(localStorage.getItem('cart')) || [];
@@ -198,7 +197,6 @@ document.querySelectorAll('.products .box').forEach(box => {
   });
 });
 
-// Initial cart load
 loadCartItems();
 
 // FAQs toggle
@@ -231,7 +229,7 @@ const observer = new IntersectionObserver(function (entries, observer) {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
       entry.target.classList.add('active');
-      observer.unobserve(entry.target); // Remove if you want it only once
+      observer.unobserve(entry.target); 
     }
   });
 }, options);
